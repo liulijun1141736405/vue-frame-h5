@@ -1,0 +1,6 @@
+build-job:
+    stage: build
+    script:
+      - /usr/local/bin/deploy
+    except:
+      - master

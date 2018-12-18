@@ -1,0 +1,136 @@
+.scroll-box{
+  height:100%;
+  padding-top: 168px;
+  padding-bottom: 200px;
+}
+.section{ 
+  .sce-navbar{
+    padding:24px 30px;
+    .navbar-item{ 
+      padding:0 15px;
+      width:33.33%;
+      text-align: center;
+      &:nth-last-child(1){
+        padding-right: 0px;
+        &::before{
+          content: "";
+          display: none;
+        } 
+      }
+    }
+  }
+}
+.mba-introduce{
+  padding:0 30px; 
+}
+.college{ 
+  .college-sec{
+    position: relative;
+  }
+  .change-sec{
+    position: absolute;
+    right:0px;
+    width:60px; 
+    top:0;
+    height:220px; 
+    .change-data{
+      position: absolute;
+      top:98px;
+      right:20px;
+      width: 20px;
+      height: 20px;
+      &::after{
+        content: " ";
+        position: absolute;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        border: #333 solid 4px;
+        border-left: 0;
+        border-bottom: 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .area-bg{
+    width:100%;
+    height:220px;
+  }
+  .mint-cell-value{
+    width: 100%;
+  }
+  .mint-cell-title{
+    display: none;
+  }
+  
+  .load-more{
+    display: block;
+    margin: 20px auto;
+    width: 24px;
+  }
+  .college-tab-box{
+    // height:654px;
+    overflow: hidden;
+  }
+}
+.public-class{
+  padding:0 30px;
+  .sce-navbtn{
+    li{
+      margin-right:30px;
+      &:nth-last-child(1){
+        margin-right: 0;
+      }
+    }
+  }
+} 
+.curriculum{
+  padding:0 30px;
+  .curriculum-left{
+    width: 382px;
+    position: relative;
+    margin-right: 8px;
+    .curriculum-left-bg{
+      width:100%;
+      width: 382px;
+      height:352px;
+    }
+    img{
+      width:100%;
+    }
+  }
+  .curriculum-right{ 
+    width:300px;
+    position: relative;
+    .right-item{
+      position: relative;
+      .curriculum-right-bg{
+        width:100%;
+        height:172px;
+        margin-bottom: 8px;
+        &:nth-last-child(1){ 
+          margin-bottom: 0px;
+        }
+      } 
+      img{
+        width:100%;
+      }
+    } 
+  }
+  .curriculum-more{
+    text-align: center;
+    bottom: 24px;
+    font-size:24px;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:34px;
+  }
+} 
+.mba-biref{
+  padding: 0 30px 0;
+  .navbtn-item{
+    margin-right: 28px;
+  }
+}

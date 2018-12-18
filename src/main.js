@@ -25,8 +25,7 @@ import 'vue-photo-preview/dist/skin.css'
 
 import wx from "./assets/js/wx"; 
  
-interactive.init('greatbear');
-Vue.prototype.interactive = interactive; 
+ 
 
 Vue.use(VueLazyload)
 Vue.use(Navigation, {router})

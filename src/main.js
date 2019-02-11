@@ -23,7 +23,7 @@ import VueLazyload from 'vue-lazyload'  //引入这个懒加载插件
 import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
 
-import wx from "./assets/js/wx"; 
+ 
  
  
 
@@ -36,9 +36,7 @@ Vue.prototype.util = util;
 Vue.prototype.Loading = Indicator;
 Vue.prototype.Toast = Toast;
 Vue.prototype.MsgBox = MessageBox;
-
-
-Vue.prototype.wx = wx;
+ 
 Vue.prototype.$ajax = ajax;
 Vue.config.productionTip = false;
 

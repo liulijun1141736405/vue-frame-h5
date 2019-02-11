@@ -11,17 +11,19 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-const env = process.env.NODE_ENV === 'testing'
-  ? require('../config/test.env')
-  : require('../config/prod.env')
+// const env = process.env.NODE_ENV === 'dev'
+//   ? require('../config/dev.env')
+//   : require('../config/prod.env')
+const env = config.build[process.env.env_config+'Env']
 const api = require('../src/api/global');
-if (process.env.env_config === 'prod') {
-  env.api = "'" + JSON.stringify(api.prod) + "'";
-} else if (process.env.env_config === 'dev') {
-  env.api = "'" + JSON.stringify(api.dev) + "'";
-}else if (process.env.env_config === 'base') {
-  env.api = "'" + JSON.stringify(api.base) + "'";
-}
+env.api = "'" + JSON.stringify(api.prod) + "'";
+// if (process.env.env_config === 'prod') {
+//   env.api = "'" + JSON.stringify(api.prod) + "'";
+// } else if (process.env.env_config === 'dev') {
+//   env.api = "'" + JSON.stringify(api.dev) + "'";
+// }else if (process.env.env_config === 'base') {
+//   env.api = "'" + JSON.stringify(api.base) + "'";
+// }
 
 
 

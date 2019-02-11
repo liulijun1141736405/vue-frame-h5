@@ -5,16 +5,18 @@
   "author": "liulijun <11141736405@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev2.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "build:prod": "cross-env env_config=prod node build/build.js",
-    "build:dev": "cross-env env_config=dev node build/build.js"
+    "build:prep": "cross-env NODE_ENV=preparation env_config=prep node build/build.js",
+    "build:dev": "cross-env NODE_ENV=development env_config=dev node build/build.js",
+    "build:prod": "cross-env NODE_ENV=production env_config=prod node build/build.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "echarts": "^4.2.0-rc.2",
     "mint-ui": "^2.2.13",
-    "qs": "^6.5.2",
+    "qs": "^6.5.2", 
     "vue": "^2.5.2",
     "vue-loader": "^13.7.3",
     "vue-navigation": "^1.1.4",

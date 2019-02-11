@@ -1,6 +1,6 @@
-# projext-name
+# fe-mapp
 
-> A Vue.js project h5
+> A Vue.js project
 
 ## Build Setup
 
@@ -8,24 +8,43 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:9090
+# 运行
 npm run dev
 
-# build for production with minification
+# 测试
+npm run build:dev
+# 预发布
+npm run build:prep
+# 发布
 npm run build:prod
 
- 
+#  调起大熊
+@click="greatbear"
+#  打电话
+@click="call"
 ```
 
-用到的插件：
-1. vue-navigation  实现前进刷新后退不刷新
-2. vue-photo-preview 图片预览切换
-3. vue-lazyload  图片懒加载
-4. mint-ui  UI插件
-5. weixin-js-sdk  微信自定义转发
-6. postcss-pxtorem  px转rem  (注意 .postcsssrc.js  文件)
+#  git 提交
+  feat：新功能（feature）   
+  fix：修补bug    
+  docs：文档（documentation）    
+  style： 格式（不影响代码运行的变动）    
+  refactor：重构（即不是新增功能，也不是修改bug的代码变动）    
+  test：增加测试    
+  chore：构建过程或辅助工具的变动    
+#  navigation
 
-插件下载
-（https://www.npmjs.com/  官网下载）
+方法: [ on | once | off ]    
+
+事件类型: [ forward | back | replace | refresh | reset ]    
+
+参数( to | from ) 的属性:    
+```js  
+this.$navigation.on('back', (to, from) => {
+  console.log('back to', to, 'from ', from)
+})
+````
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 

@@ -3,21 +3,18 @@
     <navigation>
       <router-view> 
       </router-view>  
-    </navigation>
-    <weixin></weixin>
+    </navigation> 
   </div>
 </template>
 
-<script>
-import weixin from '@/components/common/weixin' 
+<script> 
 export default {
   name: 'App',
   data(){
     return{ 
     }
   },
-  components:{
-    weixin
+  components:{ 
   },
   created(){ 
     let that = this; 
